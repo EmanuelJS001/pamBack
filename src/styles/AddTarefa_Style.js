@@ -1,91 +1,158 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-
     container: {
         flex: 1,
-        backgroundColor: '#FFF8E7'
+        backgroundColor: '#FFF9E9',
     },
 
     innerForm: {
-        boxShadow: 'rgba(70, 55, 20, 0.12) 0px 2px 4px, rgba(70, 55, 20, 0.08) 0px 6px 12px',
-        borderRadius: 14,
-        backgroundColor: '#FFFFFF',
-        paddingVertical: 20,
-        paddingHorizontal: 20,
-        display: 'flex',
+        width: '90%',
         alignSelf: 'center',
+        marginTop: 75,
         marginBottom: 100,
-        marginTop: 15,
-        width: '90%'
+
+        paddingVertical: 28,
+        paddingHorizontal: 22,
+
+        backgroundColor: '#FFFFFF',
+        borderRadius: 18,
+
+        // Android
+        elevation: 5,
+
+        // iOS
+        shadowColor: '#6B5420',
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 10,
     },
 
     scrollContainer: {
-        height: 1
+        flexGrow: 1,
+        paddingBottom: 30,
     },
 
     textBox: {
-        paddingHorizontal: 10,
-        borderRadius: 8,
-        marginBottom: 25,
-        height: 40,
         width: '100%',
-        backgroundColor: '#FFFDF5',
+        height: 48,
+
+        paddingHorizontal: 14,
+
+        marginBottom: 22,
+
+        backgroundColor: '#FFFDF7',
         borderWidth: 1,
-        borderColor: '#E6D9A8',
+        borderColor: '#E8D9A6',
+        borderRadius: 10,
+
         color: '#302B20',
         fontSize: 15,
 
-        boxShadow: 'rgba(70, 55, 20, 0.08) 0px 2px 4px'
+        // Android
+        elevation: 1,
+
+        // iOS
+        shadowColor: '#6B5420',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.05,
+        shadowRadius: 3,
     },
 
     opcaoEntrada: {
-        display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 8,
     },
 
     opcaoEntradaText: {
-        color: '#C28A00',
         marginBottom: 20,
+
+        color: '#B77900',
+        fontSize: 15,
         fontFamily: 'Inter_700Bold',
     },
 
     boxTitle: {
-        marginBottom: 10,
-        fontSize: 20,
+        marginBottom: 14,
+
+        fontSize: 21,
+        lineHeight: 27,
+
         fontFamily: 'Inter_700Bold',
         color: '#302B20',
     },
 
     header: {
-        backgroundColor: '#FFCB45',
-        padding: 10,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'left',
-        width: '100%',
-        gap: 10,
+        position: 'absolute',
         top: 0,
-        position: 'absolute'
+        left: 0,
+        right: 0,
+
+        height: 62,
+
+        paddingHorizontal: 18,
+
+        backgroundColor: '#FFCB45',
+
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+
+        gap: 10,
+
+        // Android
+        elevation: 6,
+
+        // iOS
+        shadowColor: '#806000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.18,
+        shadowRadius: 5,
+
+        zIndex: 10,
     },
 
     formButton: {
-        paddingHorizontal: 10,
-        paddingVertical: 11,
-        borderRadius: 10,
-        alignSelf: 'center',
         width: '80%',
-        marginTop: 10,
-        backgroundColor: '#E0A800',
+        alignSelf: 'center',
 
-        boxShadow: 'rgba(180, 130, 0, 0.25) 0px 3px 6px'
+        marginTop: 8,
+
+        paddingVertical: 13,
+        paddingHorizontal: 18,
+
+        borderRadius: 12,
+
+        backgroundColor: '#D99B00',
+
+        // Android
+        elevation: 4,
+
+        // iOS
+        shadowColor: '#B27A00',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 5,
     },
 
     formButtonText: {
         textAlign: 'center',
-        fontSize: 20,
+
+        fontSize: 18,
+        fontFamily: 'Inter_700Bold',
         color: '#FFFFFF',
-        fontWeight: 'bold',
-        fontFamily: 'Inter_700Bold'
-    }
+    },
 });

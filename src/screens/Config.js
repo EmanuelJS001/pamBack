@@ -78,15 +78,7 @@ export function ConfigScreen({navigation}) {
         <View style={styles.configContainer}>
           <Text style={styles.configText}>Bem-vindo, {username}!</Text>
           <Text style={styles.perfilImg}>TASKS</Text>
-
           <View style={styles.configButtons}>
-            <TouchableOpacity style={styles.tarefaButton} onPress={() => navigation.navigate("Tarefas")}>
-              <Text style={styles.tarefaButtonText}>Ver suas tarefas</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.creditosButton} onPress={() => navigation.navigate("Devs")}>
-              <Text style={styles.creditosButtonText}>Créditos</Text>
-            </TouchableOpacity>
 
             <TouchableOpacity style={styles.logoutButton} onPress={() => logout(navigation)}>
               <Text style={styles.logoutButtonText}>Sair</Text>
@@ -103,4 +95,3 @@ export function ConfigScreen({navigation}) {
     </SafeAreaView>
   );
 }
-
